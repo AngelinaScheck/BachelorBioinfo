@@ -29,5 +29,5 @@ add_definitions (-DSEQAN_APP_VERSION="${SEQAN_APP_VERSION}")
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${SEQAN_CXX_FLAGS}")
 
 # Add executable and link against SeqAn dependencies.
-add_executable (statistics statistics.cpp)
-target_link_libraries (statistics ${SEQAN_LIBRARIES})
+add_executable (statisticslibsvm statisticslibsvm.cpp svm.cpp)
+target_link_libraries (statisticslibsvm ${SEQAN_LIBRARIES})

@@ -37,5 +37,8 @@ struct Info_sep
 
 void feedInfo(seqan::VcfRecord record, Info_sep & infoInStruct);
 void clearInfo(Info_sep & infoInStruct);
+void writeLibSvm(std::ofstream & svmtest, std::ofstream & libsvmformat, Info_sep & infoInStruct, int entryNumber);
+void writeOutput(std::ifstream & testfile, std::ifstream & libsvmresult, std::ofstream & combindedResult);
+std::fstream& GotoLine(std::fstream& file, unsigned int num);
 
 #endif
