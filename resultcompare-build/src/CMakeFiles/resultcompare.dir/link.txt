@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -O3 -DNDEBUG    CMakeFiles/resultcompare.dir/resultcompare.cpp.o  -o ../bin/resultcompare -rdynamic -lrt -lpthread -lz 
