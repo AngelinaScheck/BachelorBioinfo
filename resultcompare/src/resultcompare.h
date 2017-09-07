@@ -14,6 +14,7 @@ struct hit
     int start;
     int end;
     double score;
+    //std::string svtype;                       // type
 };
 
 void clearHit(hit & thisHit);

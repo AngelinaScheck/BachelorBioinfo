@@ -22,7 +22,7 @@ int main()
     listoftrues.reserve(1000000);
     struct hit truepositive;
     
-    //seqan read record for bed files does not work on the given file because of scipped information in the file, either modify seqan method or use inputstream
+    //seqan read record for bed files does not work on the given file
     // Open input bed file, store in struct
 //     BedFileIn bedIn(toCString(getAbsolutePath("../../GIAB_NA12878.bed")));
 //     BedRecord<Bed3> record;
@@ -39,7 +39,6 @@ int main()
 //     }
     
     std::ifstream bedin("../GIAB_NA12878.bed");
-    
     int bedchromosome;
     int bedstart, bedend;
     std::string line;
@@ -51,7 +50,6 @@ int main()
             truepositive.chr=bedchromosome;
             truepositive.start= bedstart;
             truepositive.end=bedend;
-            truepositive.score=1.00;
             listoftrues.push_back(truepositive);
         }
     }
@@ -59,12 +57,13 @@ int main()
     
     //__________________Read_and_process_positives_from_libsvm-prediction__________________________________
     //positives with vt=3 (training dataset) will be read later in parallel to rank aggregation
+    //47_out_ListOfStrucVar.vcf is list of vt=2 that were identified as true by libsvm
     std::cout<< "processing and file reading for svm results" <<std::endl;
     int vt;
     std::vector<struct hit> listfromsvm;
     listfromsvm.reserve(1000000);
     struct hit positivesvm;
-    VcfFileIn vcfIn(toCString(getAbsolutePath("../../47_out_ListOfStrucVar.vcf")));
+    VcfFileIn vcfIn(toCString(getAbsolutePath("../../resultcompare-build/47_out_ListOfStrucVar.vcf")));
     VcfRecord record;
     
     // Copy over header.
@@ -74,9 +73,12 @@ int main()
     while (!atEnd(vcfIn)){
         clearHit(positivesvm);
         readRecord(record, vcfIn);
-        vt=feedFromVCF(record, positivesvm);
-        if(vt==2 && positivesvm.chr!=0 && positivesvm.start!=0){
-            listfromsvm.push_back(positivesvm);
+        //for testing only deletions
+        if(record.alt=="<DEL>"){
+            vt=feedFromVCF(record, positivesvm);
+            if(vt==2 && positivesvm.chr!=0 && positivesvm.start!=0){
+                listfromsvm.push_back(positivesvm);
+            }
         }
     }
 
@@ -96,7 +98,7 @@ int main()
     unknownForRank.reserve(1000000);
     
     //----loop-over-records-in-original-vcf-file,-fill-structures-------------------
-    VcfFileIn vcfInRank(toCString(getAbsolutePath("../../47_out.vcf")));
+    VcfFileIn vcfInRank(toCString(getAbsolutePath("../../resultcompare-build/47_out.vcf")));
     VcfRecord recordRank;
     // read header.
     VcfHeader headerRank;
@@ -105,19 +107,22 @@ int main()
     while (!atEnd(vcfInRank)){
         clearHit(forRank);
         readRecord(recordRank, vcfInRank);
-        vtRank=feedFromVCF(recordRank, forRank);
-        if(vtRank==3 && forRank.chr!=0 && forRank.start!=0){
-            listfromsvm.push_back(forRank); //training set is not included in resultlist that was read before
-            listfromrank.push_back(forRank);
+        //for testing only deletions
+        if(recordRank.alt=="<DEL>"){
+            vtRank=feedFromVCF(recordRank, forRank);
+            if(vtRank==3 && forRank.chr!=0 && forRank.start!=0){
+                listfromsvm.push_back(forRank); //training set is not included in resultlist that was read before
+                listfromrank.push_back(forRank);
+            }
+            if(vtRank==2 && forRank.chr!=0 && forRank.start!=0){
+                unknownForRank.push_back(forRank);
+            }
+            if(vtRank==1 && forRank.chr!=0 && forRank.start!=0){
+                negativeForRank.push_back(forRank);
+            }
         }
-        if(vtRank==2 && forRank.chr!=0 && forRank.start!=0){
-            unknownForRank.push_back(forRank);
-        }
-        if(vtRank==1 && forRank.chr!=0 && forRank.start!=0){
-            negativeForRank.push_back(forRank);
-        }
-    }
-    listfromsvm.shrink_to_fit();
+     }
+     listfromsvm.shrink_to_fit();
     
     //--------------rank aggregation: top 25% of unknown are considered to be positives----------------------    
     unknownForRank.shrink_to_fit();
@@ -167,8 +172,8 @@ int main()
     int falseNegRank = 0;
     int falsePosRank= 0;
     
-    for(unsigned i=0;i<numberTrues;i++){
-        for(unsigned j=0; j<totalRank;j++){
+    for(int i=0;i<numberTrues;i++){
+        for(int j=0; j<totalRank;j++){
             if(listoftrues[i].chr==listfromrank[j].chr && listoftrues[i].start<=listfromrank[j].start && listoftrues[i].end>listfromrank[j].start){
                 truePosRank++;
                 break;
@@ -177,20 +182,21 @@ int main()
     }
     
     falseNegRank= numberTrues-truePosRank;
-    falsePosRank=totalSVM-truePosRank;
+    falsePosRank=totalRank-truePosRank;
     
     //-------------------------print-results-------------------------------------------------
     std::cout<<numberTrues<<" true positives"<<std::endl;
     std::cout<<"svm identified "<<totalSVM<<" hits"<<std::endl;
-    std::cout<<"of which "<<truePosSVM<<" true positives, "<<falseNegSVM<<" false negatives and "<<falsePosSVM<<std::endl;
+    std::cout<<"of which "<<truePosSVM<<" true positives, "<<falseNegSVM<<" false negatives and "<<falsePosSVM<<" false positives "<<std::endl;
     std::cout<<"rank aggregation identified "<<totalRank<<" hits"<<std::endl;
-    std::cout<<"of which "<<truePosRank<<" true positives, " <<falseNegRank<<" false negatives and "<<falsePosRank<<std::endl;
+    std::cout<<"of which "<<truePosRank<<" true positives, " <<falseNegRank<<" false negatives and "<<falsePosRank<<" false positives "<<std::endl;
+   
 
-    std::ofstream result("47_checkedIfTrue.txt");
-    result<<numberTrues<<"TotalTrues "<<"totalHits "<<"truePositive "<<"falseNegative "<<"falsePositive"<<"\n";
-    result<<"svm: "<<totalSVM<<" "<<truePosSVM<<" "<<falseNegSVM<<" "<<falsePosSVM<<"\n";
-    result<<"rankAgg: "<<totalRank<<" "<<truePosRank<<" "<<falseNegRank<<" "<<falsePosRank<<"\n";
-    result.close();
+//     std::ofstream result("47_checkedIfTrue.txt");
+//     result<<numberTrues<<"TotalTrues "<<"totalHits "<<"truePositive "<<"falseNegative "<<"falsePositive"<<"\n";
+//     result<<"svm: "<<totalSVM<<" "<<truePosSVM<<" "<<falseNegSVM<<" "<<falsePosSVM<<"\n";
+//     result<<"rankAgg: "<<totalRank<<" "<<truePosRank<<" "<<falseNegRank<<" "<<falsePosRank<<"\n";
+//     result.close();
 
     return 0;
 }
@@ -254,6 +260,7 @@ int feedFromVCF(seqan::VcfRecord record, struct hit & thisHit){
                  return 0;
              }
         else{
+            //thisHit.svtype=CharStringToStdString(record.alt);
             thisHit.chr=record.rID;
             thisHit.start=record.beginPos;
             thisHit.score=se + pe + re;
@@ -313,3 +320,7 @@ void quickSort(std::vector<hit> & unknown, unsigned left, unsigned right){
         }
     }
 }
+
+// void sortByType(){
+//     
+// }
