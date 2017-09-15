@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic.h
 seqan/platform.h
 -
 seqan/basic/basic_debug.h
@@ -52,65 +52,65 @@ seqan/basic/basic_device.h
 seqan/basic/basic_simd_vector.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/aggregate_concept.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/aggregate_concept.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_chunkpool.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_chunkpool.h
 seqan/basic/allocator_interface.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_interface.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_interface.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_multipool.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_multipool.h
 seqan/basic/allocator_interface.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_simple.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_simple.h
 seqan/basic/allocator_interface.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_singlepool.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_singlepool.h
 seqan/basic/allocator_interface.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_to_std.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/allocator_to_std.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_adapt_builtins.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_adapt_builtins.h
 limits
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_bio.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_bio.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_concept.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_concept.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_math.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_math.h
 climits
 -
 float.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_profile.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_profile.h
 seqan/misc/memset.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_qualities.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_qualities.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_residue.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_residue.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_residue_funcs.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_residue_funcs.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_residue_tabs.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_residue_tabs.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_simple_type.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_simple_type.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_storage.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/alphabet_storage.h
 float.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/array_construct_destruct.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/array_construct_destruct.h
 new
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_aggregate.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_aggregate.h
 seqan/platform.h
 -
 seqan/basic/basic_metaprogramming.h
@@ -136,7 +136,7 @@ seqan/basic/tuple_base.h
 seqan/basic/tuple_bit_compressed.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_allocator.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_allocator.h
 seqan/platform.h
 -
 seqan/basic/basic_fundamental.h
@@ -158,7 +158,7 @@ seqan/basic/allocator_chunkpool.h
 seqan/basic/allocator_to_std.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_alphabet.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_alphabet.h
 seqan/platform.h
 -
 seqan/basic/basic_metaprogramming.h
@@ -190,7 +190,7 @@ seqan/basic/alphabet_residue.h
 seqan/basic/alphabet_profile.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_concept.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_concept.h
 seqan/platform.h
 -
 seqan/basic/basic_fundamental.h
@@ -204,7 +204,7 @@ seqan/basic/concept_checking.h
 seqan/basic/fundamental_concepts.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_container.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_container.h
 seqan/platform.h
 -
 seqan/basic/basic_fundamental.h
@@ -218,7 +218,7 @@ seqan/basic/property_map_concept.h
 seqan/basic/container_concept.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_debug.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_debug.h
 seqan/platform.h
 -
 seqan/basic/debug_test_system.h
@@ -228,9 +228,9 @@ seqan/basic/debug_helper.h
 seqan/basic/profiling.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_device.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_device.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_exception.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_exception.h
 typeinfo
 -
 exception
@@ -240,9 +240,9 @@ stdexcept
 cxxabi.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_functors.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_functors.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_fundamental.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_fundamental.h
 algorithm
 -
 seqan/platform.h
@@ -270,7 +270,7 @@ seqan/basic/array_construct_destruct.h
 seqan/basic/hosted_type_interface.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_iterator.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_iterator.h
 seqan/platform.h
 -
 seqan/basic/basic_fundamental.h
@@ -308,7 +308,7 @@ seqan/basic/proxy_iterator.h
 seqan/basic/iterator_zip.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_math.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_math.h
 cmath
 -
 seqan/platform.h
@@ -322,7 +322,7 @@ seqan/basic/math_functions.h
 seqan/basic/math_log_space_value.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_metaprogramming.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_metaprogramming.h
 cstdlib
 -
 type_traits
@@ -342,9 +342,9 @@ seqan/basic/metaprogramming_type_algebra.h
 seqan/basic/metaprogramming_enable_if.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_parallelism.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_parallelism.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_proxy.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_proxy.h
 seqan/platform.h
 -
 seqan/basic/basic_fundamental.h
@@ -356,7 +356,7 @@ seqan/basic/proxy_base.h
 seqan/basic/proxy_iterator.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_simd_vector.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_simd_vector.h
 utility
 -
 tuple
@@ -368,7 +368,7 @@ x86intrin.h
 type_traits
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_smart_pointer.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_smart_pointer.h
 seqan/platform.h
 -
 seqan/basic/basic_fundamental.h
@@ -386,31 +386,31 @@ seqan/basic/holder_tristate.h
 seqan/basic/volatile_ptr.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_stream.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_stream.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_tangle.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_tangle.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_type.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_type.h
 cstddef
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_view.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/basic_view.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/boost_preprocessor_subset.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/boost_preprocessor_subset.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/builtin_functions.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/builtin_functions.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/concept_checking.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/concept_checking.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/container_concept.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/container_concept.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/debug_helper.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/debug_helper.h
 cstdio
 -
 fstream
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/debug_test_system.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/debug_test_system.h
 iostream
 -
 iomanip
@@ -448,77 +448,77 @@ cxxabi.h
 signal.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_chunking.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_chunking.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_comparison.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_comparison.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_concepts.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_concepts.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_conversion.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_conversion.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_metafunctions.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_metafunctions.h
 seqan/basic/basic_metaprogramming.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_tags.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_tags.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_transport.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/fundamental_transport.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/holder_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/holder_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/holder_simple.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/holder_simple.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/holder_tristate.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/holder_tristate.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/hosted_type_interface.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/hosted_type_interface.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_adapt_std.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_adapt_std.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_adaptor.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_adaptor.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_concept.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_concept.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_counting.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_counting.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_interface.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_interface.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_position.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_position.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_range.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_range.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_zip.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/iterator_zip.h
 tuple
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/macro_deprecated.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/macro_deprecated.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/math_functions.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/math_functions.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/math_log_space_value.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/math_log_space_value.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_control.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_control.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_enable_if.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_enable_if.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_logic.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_logic.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_math.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_math.h
 seqan/platform.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_type.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_type.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_type_algebra.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/metaprogramming_type_algebra.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/pair_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/pair_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/pair_bit_compressed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/pair_bit_compressed.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/pair_packed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/pair_packed.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/profiling.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/profiling.h
 ctime
 -
 unistd.h
@@ -526,13 +526,13 @@ unistd.h
 sys/time.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/property_map_concept.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/property_map_concept.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/proxy_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/proxy_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/proxy_iterator.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/proxy_iterator.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/test_system.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/test_system.h
 typeinfo
 -
 seqan/basic/fundamental_tags.h
@@ -544,17 +544,17 @@ string
 cxxabi.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/triple_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/triple_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/triple_packed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/triple_packed.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/tuple_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/tuple_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/tuple_bit_compressed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/tuple_bit_compressed.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/basic/volatile_ptr.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/basic/volatile_ptr.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/bed_io.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/bed_io.h
 seqan/basic.h
 -
 seqan/stream.h
@@ -570,17 +570,17 @@ seqan/bed_io/write_bed.h
 seqan/bed_io/bed_file.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/bed_file.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/bed_file.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/bed_record.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/bed_record.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/read_bed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/read_bed.h
 seqan/stream.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/write_bed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/bed_io/write_bed.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file.h
 iostream
 -
 climits
@@ -620,21 +620,21 @@ seqan/file/string_mmap.h
 seqan/file/string_external.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file/file_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file/file_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file/file_forwards.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file/file_forwards.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file/file_interface.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file/file_interface.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file/file_mapping.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file/file_mapping.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file/file_page.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file/file_page.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file/string_external.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file/string_external.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/file/string_mmap.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/file/string_mmap.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find.h
 cmath
 -
 deque
@@ -696,51 +696,51 @@ seqan/find/find_hamming_simple.h
 seqan/find/find_lambda.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_abndm.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_abndm.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_ahocorasick.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_ahocorasick.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_begin.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_begin.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_bndm.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_bndm.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_bom.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_bom.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_hamming_simple.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_hamming_simple.h
 algorithm
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_horspool.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_horspool.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_lambda.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_lambda.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_multiple_bfam.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_multiple_bfam.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_multiple_shiftand.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_multiple_shiftand.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_myers_ukkonen.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_myers_ukkonen.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_pattern_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_pattern_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_pex.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_pex.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_score.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_score.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_set_horspool.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_set_horspool.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_shiftand.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_shiftand.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_shiftor.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_shiftor.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_simple.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_simple.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_wild_shiftand.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_wild_shiftand.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/find/find_wumanber.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/find/find_wumanber.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms.h
 set
 -
 queue
@@ -794,49 +794,49 @@ seqan/graph_algorithms/weakly_connected_components.h
 seqan/graph_algorithms/weighted_bipartite_matching.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/all_pairs_shortest_path.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/all_pairs_shortest_path.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/bellman_ford.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/bellman_ford.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/bipartite_matching.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/bipartite_matching.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/breadth_first_search.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/breadth_first_search.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/connected_components.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/connected_components.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/depth_first_search.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/depth_first_search.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/dijkstra.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/dijkstra.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/floyd_warshall.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/floyd_warshall.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/ford_fulkerson.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/ford_fulkerson.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/graph_algorithm_heap_tree.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/graph_algorithm_heap_tree.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/graph_algorithm_hmm.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/graph_algorithm_hmm.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/graph_algorithm_lis_his.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/graph_algorithm_lis_his.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/kruskal.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/kruskal.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/path_growing.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/path_growing.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/prim.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/prim.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/single_source_shortest_path.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/single_source_shortest_path.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/strongly_connected_compnents.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/strongly_connected_compnents.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/topological_sort.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/topological_sort.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/transitive_closure.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/transitive_closure.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/weakly_connected_components.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/weakly_connected_components.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/weighted_bipartite_matching.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_algorithms/weighted_bipartite_matching.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types.h
 deque
 -
 seqan/basic.h
@@ -892,57 +892,57 @@ seqan/graph_types/graph_iterator_dfs.h
 seqan/graph_types/graph_drawing.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_drawing.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_drawing.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_edgestump.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_edgestump.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_idmanager.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_idmanager.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_automaton.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_automaton.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_directed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_directed.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_hmm.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_hmm.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_oracle.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_oracle.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_tree.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_tree.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_trie.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_trie.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_undirected.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_undirected.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_wordgraph.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_impl_wordgraph.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_interface.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_interface.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_adjacency.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_adjacency.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_bfs.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_bfs.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_dfs.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_dfs.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_edge.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_edge.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_outedge.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_outedge.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_vertex.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/graph_iterator_vertex.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/property_map_generic.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/property_map_generic.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/property_map_internal.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/property_map_internal.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/property_map_internal_pointer.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/graph_types/property_map_internal_pointer.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/index/shape_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/index/shape_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/index/shape_gapped.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/index/shape_gapped.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map.h
 set
 -
 map
@@ -966,45 +966,45 @@ seqan/map/sumlist_mini.h
 seqan/map/sumlist_skip.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/map_adapter_stl.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/map_adapter_stl.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/map_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/map_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/map_chooser.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/map_chooser.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/map_skiplist.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/map_skiplist.h
 random
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/map_vector.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/map_vector.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/sumlist.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/sumlist.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/sumlist_mini.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/sumlist_mini.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/map/sumlist_skip.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/map/sumlist_skip.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/misc/bit_twiddling.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/misc/bit_twiddling.h
 intrin.h
 -
 nmmintrin.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/misc/bit_twiddling_functors.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/misc/bit_twiddling_functors.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/misc/memset.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/misc/memset.h
 seqan/basic/basic_metaprogramming.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/misc/name_store_cache.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/misc/name_store_cache.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/misc/union_find.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/misc/union_find.h
 seqan/basic.h
 -
 seqan/sequence.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier.h
 functional
 -
 list
@@ -1042,37 +1042,37 @@ seqan/modifier/modifier_position.h
 seqan/modifier/modifier_padding.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/cyclic_shape.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/cyclic_shape.h
 seqan/index/shape_base.h
 -
 seqan/index/shape_gapped.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_alphabet.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_alphabet.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_alphabet_expansion.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_alphabet_expansion.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_cyclic_shape.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_cyclic_shape.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_functors.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_functors.h
 cctype
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_iterator.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_iterator.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_padding.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_padding.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_position.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_position.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_reverse.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_reverse.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_shortcuts.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_shortcuts.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_string.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_string.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_view.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/modifier/modifier_view.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel.h
 seqan/platform.h
 -
 seqan/basic.h
@@ -1122,39 +1122,39 @@ seqan/parallel/parallel_resource_pool.h
 seqan/parallel/parallel_serializer.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_algorithms.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_algorithms.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_atomic_misc.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_atomic_misc.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_atomic_primitives.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_atomic_primitives.h
 intrin.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_lock.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_lock.h
 xmmintrin.h
 -
 Windows.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_macros.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_macros.h
 omp.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_queue.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_queue.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_queue_suspendable.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_queue_suspendable.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_resource_pool.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_resource_pool.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_sequence.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_sequence.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_serializer.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_serializer.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_splitting.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_splitting.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_tags.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/parallel/parallel_tags.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/platform.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/platform.h
 cinttypes
 -
 cstddef
@@ -1162,7 +1162,7 @@ cstddef
 ciso646
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/random.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/random.h
 sstream
 -
 random
@@ -1178,13 +1178,13 @@ seqan/random/random_beta.h
 seqan/random/random_util.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/random/random_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/random/random_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/random/random_beta.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/random/random_beta.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/random/random_util.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/random/random_util.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score.h
 seqan/basic.h
 -
 seqan/stream.h
@@ -1206,25 +1206,25 @@ seqan/score/score_simple.h
 seqan/score/score_simd_wrapper.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_edit.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_edit.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix_data.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix_data.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix_dyn.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix_dyn.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix_io.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_matrix_io.h
 seqan/stream.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_simd_wrapper.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_simd_wrapper.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/score/score_simple.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/score/score_simple.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence.h
 cassert
 -
 map
@@ -1310,65 +1310,65 @@ seqan/sequence/string_set_owner.h
 seqan/sequence/string_set_segment.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/adapt_array_pointer.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/adapt_array_pointer.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/adapt_stl_container.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/adapt_stl_container.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/container_view.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/container_view.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/container_view_zip.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/container_view_zip.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/iter_concat_virtual.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/iter_concat_virtual.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_infix.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_infix.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_prefix.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_prefix.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_suffix.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_suffix.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_utils.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/segment_utils.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_concatenator.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_concatenator.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_forwards.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_forwards.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_interface.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_interface.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_lexical.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_lexical.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_shortcuts.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/sequence_shortcuts.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_alloc.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_alloc.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_array.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_array.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_block.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_block.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_cstyle.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_cstyle.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_packed.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_packed.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_concat_direct.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_concat_direct.h
 algorithm
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_dependent_generous.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_dependent_generous.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_dependent_tight.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_dependent_tight.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_owner.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_owner.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_segment.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_segment.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_view.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/sequence/string_set_view.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream.h
 iostream
 -
 fstream
@@ -1422,23 +1422,23 @@ seqan/stream/tokenization.h
 seqan/stream/lexical_cast.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/adapt_ios.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/adapt_ios.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/buffered_stream.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/buffered_stream.h
 cstdio
 -
 cstring
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/file_stream.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/file_stream.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/formatted_file.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/formatted_file.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/guess_format.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/guess_format.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bgzf.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bgzf.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2.h
 bzlib.h
 -
 vector
@@ -1448,17 +1448,17 @@ iostream
 algorithm
 -
 iostream_bzip2_impl.h
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2_impl.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2_impl.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2_impl.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2_impl.h
 iostream_bzip2.h
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_bzip2.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zip.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zip.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zip_impl.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zip_impl.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zutil.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zutil.h
 stddef.h
 -
 string.h
@@ -1476,25 +1476,25 @@ unix.h
 stdio.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iter_stream.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iter_stream.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/lexical_cast.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/lexical_cast.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/stream_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/stream_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/stream_compressor.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/stream_compressor.h
 zlib.h
 -
 iostream_zutil.h
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zutil.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/iostream_zutil.h
 algorithm
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/tokenization.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/tokenization.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/stream/virtual_stream.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/stream/virtual_stream.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system.h
 seqan/file.h
 -
 cstdio
@@ -1534,17 +1534,17 @@ seqan/system/file_async.h
 seqan/system/file_directory.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system/file_async.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system/file_async.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system/file_directory.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system/file_directory.h
 io.h
 -
 dirent.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system/file_forwards.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system/file_forwards.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system/file_sync.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system/file_sync.h
 fcntl.h
 -
 sys/stat.h
@@ -1560,13 +1560,13 @@ cerrno
 unistd.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system/system_base.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system/system_base.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system/system_event_win.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system/system_event_win.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/system/system_forwards.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/system/system_forwards.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io.h
 seqan/basic.h
 -
 seqan/file.h
@@ -1592,21 +1592,21 @@ seqan/vcf_io/write_vcf.h
 seqan/vcf_io/vcf_file.h
 -
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/read_vcf.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/read_vcf.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_file.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_file.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_header.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_header.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_header_record.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_header_record.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_io_context.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_io_context.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_record.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/vcf_record.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/write_vcf.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include/seqan/vcf_io/write_vcf.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/src/resultcompare.cpp
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/src/resultcompare.cpp
 seqan/bed_io.h
 -
 seqan/vcf_io.h
@@ -1621,10 +1621,12 @@ limits
 -
 vector
 -
+algorithm
+-
 resultcompare.h
-/home/norbert/workspace/BachelorThesis/resultcompare/src/resultcompare.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/src/resultcompare.h
 
-/home/norbert/workspace/BachelorThesis/resultcompare/src/resultcompare.h
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/src/resultcompare.h
 seqan/sequence.h
 -
 seqan/basic.h

@@ -6,6 +6,7 @@
 #include <fstream>
 #include <limits>
 #include <vector>
+#include <algorithm> 
 
 #include "resultcompare.h"
 
@@ -21,22 +22,6 @@ int main()
     std::vector<struct hit> listoftrues;
     listoftrues.reserve(1000000);
     struct hit truepositive;
-    
-    //seqan read record for bed files does not work on the given file
-    // Open input bed file, store in struct
-//     BedFileIn bedIn(toCString(getAbsolutePath("../../GIAB_NA12878.bed")));
-//     BedRecord<Bed3> record;
-// 
-//     while (!atEnd(bedIn))
-//     {
-//          readRecord(record, bedIn);
-//         truepositive.chr=record.ref;
-//         truepositive.start=record.beginPos;
-//         truepositive.end=record.endPos;
-//         truepositive.score=1;
-//         listoftrues.push_back(truepositive);
-//         clearHit(truepositive);
-//     }
     
     std::ifstream bedin("../GIAB_NA12878.bed");
     int bedchromosome;
@@ -55,47 +40,14 @@ int main()
     }
     listoftrues.shrink_to_fit();
     
-    //__________________Read_and_process_positives_from_libsvm-prediction__________________________________
-    //positives with vt=3 (training dataset) will be read later in parallel to rank aggregation
-    //47_out_ListOfStrucVar.vcf is list of vt=2 that were identified as true by libsvm
-    std::cout<< "processing and file reading for svm results" <<std::endl;
-    int vt;
-    std::vector<struct hit> listfromsvm;
-    listfromsvm.reserve(1000000);
-    struct hit positivesvm;
-    VcfFileIn vcfIn(toCString(getAbsolutePath("../../resultcompare-build/47_out_ListOfStrucVar.vcf")));
-    VcfRecord record;
-    
-    // Copy over header.
-    VcfHeader header;
-    readHeader(header, vcfIn);
-    //copy over record
-    while (!atEnd(vcfIn)){
-        clearHit(positivesvm);
-        readRecord(record, vcfIn);
-        //for testing only deletions
-        if(record.alt=="<DEL>"){
-            vt=feedFromVCF(record, positivesvm);
-            if(vt==2 && positivesvm.chr!=0 && positivesvm.start!=0){
-                listfromsvm.push_back(positivesvm);
-            }
-        }
-    }
-
-    
-    
     //__________________Read_and_process_positives_from_rankaggregation_________________________________________
     //--prepare structures----
     
-    std::cout<< "processing and file reading for rank aggregation" <<std::endl;
+    std::cout<< "processing and file reading for rank aggregation (deletions only)" <<std::endl;
     std::vector<struct hit> listfromrank;
-    std::vector<struct hit> unknownForRank;
-    std::vector<struct hit> negativeForRank;
     struct hit forRank;
     
     listfromrank.reserve(1000000);
-    negativeForRank.reserve(1000000);
-    unknownForRank.reserve(1000000);
     
     //----loop-over-records-in-original-vcf-file,-fill-structures-------------------
     VcfFileIn vcfInRank(toCString(getAbsolutePath("../../resultcompare-build/47_out.vcf")));
@@ -104,99 +56,108 @@ int main()
     VcfHeader headerRank;
     readHeader(headerRank, vcfInRank);
     int vtRank;
+
     while (!atEnd(vcfInRank)){
         clearHit(forRank);
         readRecord(recordRank, vcfInRank);
         //for testing only deletions
         if(recordRank.alt=="<DEL>"){
-            vtRank=feedFromVCF(recordRank, forRank);
-            if(vtRank==3 && forRank.chr!=0 && forRank.start!=0){
-                listfromsvm.push_back(forRank); //training set is not included in resultlist that was read before
-                listfromrank.push_back(forRank);
-            }
-            if(vtRank==2 && forRank.chr!=0 && forRank.start!=0){
-                unknownForRank.push_back(forRank);
-            }
-            if(vtRank==1 && forRank.chr!=0 && forRank.start!=0){
-                negativeForRank.push_back(forRank);
-            }
+            feedFromVCFrank(recordRank, forRank);
+            listfromrank.push_back(forRank);
         }
      }
-     listfromsvm.shrink_to_fit();
+     listfromrank.shrink_to_fit();
     
-    //--------------rank aggregation: top 25% of unknown are considered to be positives----------------------    
-    unknownForRank.shrink_to_fit();
-    negativeForRank.shrink_to_fit();
+    //------sort into quantiles-------------------------------------------------------------------
+    int numberRank=listfromrank.size();
+    int marginQ1= int (0.25*numberRank);
+    int marginQ2= int (0.5*numberRank);
+    int marginQ3= int (0.75*numberRank);
     
-    int numberOfUnknown=unknownForRank.size();
-
-    std::cout<< "quick sort records with vt=2" <<std::endl;
-    //sort unknown according to score
-    quickSort(unknownForRank, 0, numberOfUnknown-1);
-    std::cout<< "rank aggregation" <<std::endl;
-    //top 25 % get written into positive list (round by type cast)
-    int margin= int (0.25*numberOfUnknown);
-    for (unsigned i=0; i<margin; i++){
-        listfromrank.push_back(unknownForRank[i]); 
+    std::vector<struct hit> rankQ1;
+    rankQ1.reserve(marginQ1 + 1);
+    std::vector<struct hit> rankQ2;
+    rankQ2.reserve(marginQ1 + 1);
+    std::vector<struct hit> rankQ3;
+    rankQ3.reserve(marginQ1 + 1);
+    std::vector<struct hit> rankQ4;
+    rankQ4.reserve(marginQ1 + 1);
+    
+    std::cout<< "quick sort records into quantiles" <<std::endl;
+    quickSort(listfromrank, 0, numberRank-1);
+    
+    for (unsigned i=0; i<numberRank; i++){
+        if(i<marginQ1){rankQ1.push_back(listfromrank[i]);}
+        else if(i<marginQ2){rankQ2.push_back(listfromrank[i]);}
+        else if(i<marginQ3){rankQ3.push_back(listfromrank[i]);}
+        else {rankQ4.push_back(listfromrank[i]);}
     }
-    listfromrank.shrink_to_fit();
     
+    rankQ1.shrink_to_fit();
+    rankQ2.shrink_to_fit();
+    rankQ3.shrink_to_fit();
+    rankQ4.shrink_to_fit();
     //_______________________Compare__________________________________________________________________
     std::cout<< "comparison" <<std::endl;
     
     int numberTrues=listoftrues.size();
+
     
-    int totalSVM=listfromsvm.size();
-    int truePosSVM = 0;
-    int falseNegSVM = 0;
-    int falsePosSVM= 0;
-    
-    
-    for(unsigned i=0;i<numberTrues;i++){
-        for(unsigned j=0; j<totalSVM;j++){
-            if(listoftrues[i].chr==listfromsvm[j].chr && listoftrues[i].start<=listfromsvm[j].start && listoftrues[i].end>listfromsvm[j].start){
-                truePosSVM++;
-                break;
-            }
-        }
-    }
-    
-    //false negatives are the ones contained in listoftrues but not in listfromsvm
-    falseNegSVM= numberTrues-truePosSVM;
-    //false positives are contained in listfromsvm but not in listoftrues
-    falsePosSVM=totalSVM-truePosSVM;
-    
-    //-----same-for-rank-aggregation------------------------------------------------------
+    //-----comparison-for-rank-aggregation------------------------------------------------------
     int totalRank=listfromrank.size();
-    int truePosRank = 0;
+    int truePosRankQ1 = 0;
+    int truePosRankQ2 = 0;
+    int truePosRankQ3 = 0;
+    int truePosRankQ4 = 0;
+    int truePosRankTotal = 0;
+    
     int falseNegRank = 0;
     int falsePosRank= 0;
     
     for(int i=0;i<numberTrues;i++){
-        for(int j=0; j<totalRank;j++){
-            if(listoftrues[i].chr==listfromrank[j].chr && listoftrues[i].start<=listfromrank[j].start && listoftrues[i].end>listfromrank[j].start){
-                truePosRank++;
+        for(int j=0; j<rankQ1.size();j++){
+            if(recepMatch(listoftrues[i], rankQ1[j])){
+                truePosRankQ1++;
                 break;
             }
         }
+        
+        for(int k=0; k<rankQ2.size();k++){ //!!!improve here for speed
+            if(recepMatch(listoftrues[i], rankQ2[k])){
+                truePosRankQ2++;
+                break;
+            }
+        }
+        
+        for(int l=0; l<rankQ3.size();l++){ //!!!improve here for speed
+            if(recepMatch(listoftrues[i], rankQ3[l])){
+                truePosRankQ3++;
+                break;
+            }
+        }
+        
+        
+        for(int m=0; m<rankQ4.size();m++){ //!!!improve here for speed
+            if(recepMatch(listoftrues[i], rankQ4[m])){
+                truePosRankQ4++;
+                break;
+            }
+        }
+        
     }
     
-    falseNegRank= numberTrues-truePosRank;
-    falsePosRank=totalRank-truePosRank;
+    truePosRankTotal=truePosRankQ1+truePosRankQ2+truePosRankQ3+truePosRankQ4;
+    
+    falseNegRank= numberTrues-truePosRankTotal;
+    falsePosRank=totalRank-truePosRankTotal;
     
     //-------------------------print-results-------------------------------------------------
     std::cout<<numberTrues<<" true positives"<<std::endl;
-    std::cout<<"svm identified "<<totalSVM<<" hits"<<std::endl;
-    std::cout<<"of which "<<truePosSVM<<" true positives, "<<falseNegSVM<<" false negatives and "<<falsePosSVM<<" false positives "<<std::endl;
-    std::cout<<"rank aggregation identified "<<totalRank<<" hits"<<std::endl;
-    std::cout<<"of which "<<truePosRank<<" true positives, " <<falseNegRank<<" false negatives and "<<falsePosRank<<" false positives "<<std::endl;
-   
-
-//     std::ofstream result("47_checkedIfTrue.txt");
-//     result<<numberTrues<<"TotalTrues "<<"totalHits "<<"truePositive "<<"falseNegative "<<"falsePositive"<<"\n";
-//     result<<"svm: "<<totalSVM<<" "<<truePosSVM<<" "<<falseNegSVM<<" "<<falsePosSVM<<"\n";
-//     result<<"rankAgg: "<<totalRank<<" "<<truePosRank<<" "<<falseNegRank<<" "<<falsePosRank<<"\n";
-//     result.close();
+    
+    std::cout<<"rank aggregation identified "<<truePosRankTotal<<" true positives, " <<std::endl;
+    std::cout<<truePosRankQ1<<" in Q1 "<<truePosRankQ2<<" in Q2 "<<truePosRankQ3<<" in Q3 "<<truePosRankQ4<<" in Q4 "<<std::endl;
+    
+    std::cout<<"in total "<<falseNegRank<<" false negatives and "<<falsePosRank<<" false positives "<<std::endl;
 
     return 0;
 }
@@ -211,27 +172,21 @@ void clearHit(hit & thisHit){
 }
 
 
-int feedFromVCF(seqan::VcfRecord record, struct hit & thisHit){
+void feedFromVCFrank(seqan::VcfRecord record, struct hit & thisHit){
     //loop over Info CharString, pattern matching for keywords like SE, copy relevant info into Hit structure
-    int vt=999;
-    double se;
-    double pe;
-    double re;
+    double sc;
+    double svlen;
     
     //______Processing of the Recordinfo________-
     Finder<CharString> finder(record.info);
     //____Prepare Patterns(keywords)____-
     String<CharString> needles;
-    appendValue(needles, ";VT=");
-    appendValue(needles, ";SE=");
-    appendValue(needles, ";PE=");
-    appendValue(needles, ";RE=");
-    
+    appendValue(needles, ";SC=");
+    appendValue(needles, ";SVLEN=");
     //Find keywords, value starts at position Matchposition+Patternlength+2 and ends before semicolon
     Pattern<String<CharString>, WuManber> pattern(needles);
     unsigned endOfValue;
-    while (find(finder, pattern))
-    {
+    while (find(finder, pattern)){
         for(unsigned i=endPosition(finder); i<=length(record.info); i++){
             if(record.info[i]==';' || i==length(record.info)) {
                 //std::cout<< "end of hit at position " << i<< std::endl;
@@ -242,31 +197,23 @@ int feedFromVCF(seqan::VcfRecord record, struct hit & thisHit){
         //save info 
          CharString value = infix(record.info, endPosition(finder), endOfValue);
          
-        if(infix(finder)==";VT="){
-            vt=std::stoi(CharStringToStdString(value));
-            //std::cout<<vt<<std::endl;
+        if(infix(finder)==";SC="){
+            sc=std::stod(CharStringToStdString(value));
         }
-        if(infix(finder)==";SE="){
-                se=std::stod(CharStringToStdString(value));
+        if(infix(finder)==";SVLEN="){
+            svlen=std::stod(CharStringToStdString(value));
         }
-        if(infix(finder)==";PE="){
-            pe=std::stod(CharStringToStdString(value));
-        }
-        if(infix(finder)==";RE="){
-            re=std::stod(CharStringToStdString(value));
-        }
-            
-        if(empty(se)&& empty(pe) && empty(re)){
-                 return 0;
+        
+        if(empty(sc)){
+                 return;
              }
-        else{
-            //thisHit.svtype=CharStringToStdString(record.alt);
+        else {
             thisHit.chr=record.rID;
             thisHit.start=record.beginPos;
-            thisHit.score=se + pe + re;
+            thisHit.end=record.beginPos + abs(svlen);
+            thisHit.score=sc;
         }
     }
-    return vt;
 }
 
 //--------------quickSort--------------------------------------------------------------------
@@ -321,6 +268,15 @@ void quickSort(std::vector<hit> & unknown, unsigned left, unsigned right){
     }
 }
 
-// void sortByType(){
-//     
-// }
+bool recepMatch(struct hit trueChecked, struct hit unknown){
+    int sizeTrueChecked = abs(trueChecked.end-trueChecked.start);
+    int sizeUnknown = abs(unknown.end-unknown.start);
+    int sizeOfMatch = std::min(unknown.end, trueChecked.end) - std::max(unknown.start, trueChecked.start);
+    
+    if (((0.8* sizeTrueChecked) <= sizeOfMatch)  && ((0.8* sizeUnknown) <= sizeOfMatch) && (unknown.chr==trueChecked.chr) ){
+        return true;
+    }
+    else {
+        return false;
+    }
+}

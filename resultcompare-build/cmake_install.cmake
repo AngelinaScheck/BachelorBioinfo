@@ -1,4 +1,4 @@
-# Install script for directory: /home/norbert/workspace/BachelorThesis/resultcompare
+# Install script for directory: /home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/norbert/workspace/BachelorThesis/resultcompare-build/src/cmake_install.cmake")
+  include("/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/src/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/norbert/workspace/BachelorThesis/resultcompare-build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

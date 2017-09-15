@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/norbert/workspace/BachelorThesis/resultcompare/src/resultcompare.cpp" "/home/norbert/workspace/BachelorThesis/resultcompare-build/src/CMakeFiles/resultcompare.dir/resultcompare.cpp.o"
+  "/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/src/resultcompare.cpp" "/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/src/CMakeFiles/resultcompare.dir/resultcompare.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/norbert/workspace/BachelorThesis/resultcompare/seqan-library-2.2.0/include"
+  "/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/seqan-library-2.2.0/include"
   )
 
 # Targets to which this target links.

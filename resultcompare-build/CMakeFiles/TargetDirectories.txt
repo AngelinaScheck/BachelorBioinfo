@@ -1,5 +1,5 @@
-/home/norbert/workspace/BachelorThesis/resultcompare-build/CMakeFiles/edit_cache.dir
-/home/norbert/workspace/BachelorThesis/resultcompare-build/CMakeFiles/rebuild_cache.dir
-/home/norbert/workspace/BachelorThesis/resultcompare-build/src/CMakeFiles/edit_cache.dir
-/home/norbert/workspace/BachelorThesis/resultcompare-build/src/CMakeFiles/rebuild_cache.dir
-/home/norbert/workspace/BachelorThesis/resultcompare-build/src/CMakeFiles/resultcompare.dir
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/CMakeFiles/edit_cache.dir
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/CMakeFiles/rebuild_cache.dir
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/src/CMakeFiles/edit_cache.dir
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/src/CMakeFiles/rebuild_cache.dir
+/home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare-build/src/CMakeFiles/resultcompare.dir

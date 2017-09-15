@@ -19,7 +19,9 @@ struct hit
 
 void clearHit(hit & thisHit);
 // 
-int feedFromVCF(seqan::VcfRecord record, hit & thisHit);
+void feedFromVCFrank(seqan::VcfRecord record, struct hit & thisHit);
 
 void quickSort(std::vector<hit> & unknown, unsigned left, unsigned right);
+
+bool recepMatch(struct hit trueChecked, struct hit unknown);
 #endif

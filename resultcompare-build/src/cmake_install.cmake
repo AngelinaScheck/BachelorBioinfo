@@ -1,4 +1,4 @@
-# Install script for directory: /home/norbert/workspace/BachelorThesis/resultcompare/src
+# Install script for directory: /home/norbert/workspace/BachelorThesis/BachelorBioinfo/resultcompare/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
