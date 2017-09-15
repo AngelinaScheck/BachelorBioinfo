@@ -83,9 +83,11 @@ int main()
     std::vector<struct hit> rankQ4;
     rankQ4.reserve(marginQ1 + 1);
     
-    std::cout<< "quick sort records into quantiles" <<std::endl;
+    std::cout<< "quick sort records" <<std::endl;
     quickSort(listfromrank, 0, numberRank-1);
     
+    
+    std::cout<< "make quantiles" <<std::endl;
     for (unsigned i=0; i<numberRank; i++){
         if(i<marginQ1){rankQ1.push_back(listfromrank[i]);}
         else if(i<marginQ2){rankQ2.push_back(listfromrank[i]);}
