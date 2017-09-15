@@ -47,7 +47,7 @@ int main()
     std::vector<struct hit> listfromrank;
     struct hit forRank;
     
-    listfromrank.reserve(1000000);
+    //listfromrank.reserve(1000000);
     
     //----loop-over-records-in-original-vcf-file,-fill-structures-------------------
     VcfFileIn vcfInRank(toCString(getAbsolutePath("../../resultcompare-build/47_out.vcf")));
@@ -55,7 +55,7 @@ int main()
     // read header.
     VcfHeader headerRank;
     readHeader(headerRank, vcfInRank);
-    int vtRank;
+    int recordNumber=0;
 
     while (!atEnd(vcfInRank)){
         clearHit(forRank);
@@ -63,10 +63,27 @@ int main()
         //for testing only deletions
         if(recordRank.alt=="<DEL>"){
             feedFromVCFrank(recordRank, forRank);
-            listfromrank.push_back(forRank);
+            //sort while reading to save memory
+            if(recordNumber>0){
+                insertSort(listfromrank, forRank);
+            }
+            else{
+                listfromrank.push_back(forRank);
+            }
+            recordNumber++;
         }
      }
+     
      listfromrank.shrink_to_fit();
+     
+     //testing purpose only! is correctly sorted?
+     for (unsigned i=0; i<listfromrank.size()-1;i++){
+        if(listfromrank[i].score>listfromrank[i+1].score){
+            std::cerr<<"sorting did not work. "<<listfromrank[i].score<<" not smaller "<<listfromrank[i+1].score<< std::endl;
+        }
+    }
+     
+     
     
     //------sort into quantiles-------------------------------------------------------------------
     int numberRank=listfromrank.size();
@@ -83,8 +100,9 @@ int main()
     std::vector<struct hit> rankQ4;
     rankQ4.reserve(marginQ1 + 1);
     
-    std::cout<< "quick sort records" <<std::endl;
-    quickSort(listfromrank, 0, numberRank-1);
+//     std::cout<< "quick sort records" <<std::endl;
+//     struct hit temp;
+//     quickSort(listfromrank, 0, numberRank-1);
     
     
     std::cout<< "make quantiles" <<std::endl;
@@ -183,7 +201,7 @@ void feedFromVCFrank(seqan::VcfRecord record, struct hit & thisHit){
     Finder<CharString> finder(record.info);
     //____Prepare Patterns(keywords)____-
     String<CharString> needles;
-    appendValue(needles, ";SC=");
+    appendValue(needles, "SC=");
     appendValue(needles, ";SVLEN=");
     //Find keywords, value starts at position Matchposition+Patternlength+2 and ends before semicolon
     Pattern<String<CharString>, WuManber> pattern(needles);
@@ -199,16 +217,23 @@ void feedFromVCFrank(seqan::VcfRecord record, struct hit & thisHit){
         //save info 
          CharString value = infix(record.info, endPosition(finder), endOfValue);
          
-        if(infix(finder)==";SC="){
-            sc=std::stod(CharStringToStdString(value));
-        }
-        if(infix(finder)==";SVLEN="){
-            svlen=std::stod(CharStringToStdString(value));
-        }
-        
-        if(empty(sc)){
+        if(infix(finder)=="SC="){
+            if(empty(value)){
                  return;
              }
+             else {
+                sc=std::stod(CharStringToStdString(value));
+             }
+        }
+        if(infix(finder)==";SVLEN="){
+            if(empty(value)){
+                 return;
+             }
+             else {
+            svlen=std::stod(CharStringToStdString(value));
+             }
+        }
+
         else {
             thisHit.chr=record.rID;
             thisHit.start=record.beginPos;
@@ -219,53 +244,67 @@ void feedFromVCFrank(seqan::VcfRecord record, struct hit & thisHit){
 }
 
 //--------------quickSort--------------------------------------------------------------------
-void quickSort(std::vector<hit> & unknown, unsigned left, unsigned right){
-    //intialize counter for left and right sublists
-    unsigned i = left; 
-    unsigned j = right;
-    //initialize pivot element (middle)
-    unsigned mid= left + (right - left) / 2;
-    double pivot = unknown[mid].score;
-    //temporary values
-    struct hit temp;
+// void quickSort(std::vector<hit> & unknown, unsigned left, unsigned right){
+//     //intialize counter for left and right sublists
+//     unsigned i = left; 
+//     unsigned j = right;
+//     //initialize pivot element (middle)
+//     unsigned mid= left + (right - left) / 2;
+//     double pivot = unknown[mid].score;
+//     struct hit temp;
+//     
+//     std::cout<<"count left="<<i<<", count right="<<j<<std::endl;
+//     //divide and conq.
+//     while (i<=j) {
+//         while (unknown[i].score <= pivot){
+//             //all elements in left sublist smaller than the pivot element remain untouched
+//             if (i>=j){
+//                 break;
+//             }
+//             i++;
+//         }
+//         while (unknown[j].score > pivot){
+//             //all elements in right sublist bigger/equal than the pivot remain untouched  
+//             if (j<=i){
+//                 break;
+//             }
+//             j--;
+//         }
+//         //swap the entries if dif. to pivot
+//         if (i <= j) {
+//             //assign the temporary variables
+//             temp=unknown[i];
+//             
+//             //swap
+//             unknown[i]=unknown[j];
+//             unknown[j]=temp;
+//             
+//             //continue
+//             i++;
+//             j--;
+//             }
+//     
+//         //if sublist already sorted go one level deeper    
+//         if(left<j){
+//             quickSort(unknown, left, j);
+//         }
+//         if(i<right){
+//             quickSort(unknown,i,right);
+//         }
+//     }
+// }
+
+void insertSort(std::vector<hit> & presorted, struct hit newHit){
+    //if value smaller than current biggest value, move left, if equal or smaller insert and move all bigger elements to the right
+
+    if(newHit.score>presorted[presorted.size()-1].score){
+        presorted.push_back(newHit);
+        return;
+    }
     
-    //divide and conq.
-    while (i<=j) {
-        while (unknown[i].score <= pivot){
-            //all elements in left sublist smaller/equal than the pivot element remain untouched
-            if (i>=j){
-                break;
-            }
-            i++;
-        }
-        while (unknown[j].score > pivot){
-            //all elements in right sublist bigger than the pivot remain untouched  
-            if (j<=i){
-                break;
-            }
-            j--;
-        }
-        //if an element in the left sublist bigger pivot or an element in the right sublist smaller/equal the pivot element was find, swap the entries
-        if (i <= j) {
-            //assign the temporary variables
-            temp=unknown[i];
-            
-            //swap
-            unknown[i]=unknown[j];
-            
-            unknown[j]=temp;
-            
-            //continue
-            i++;
-            j--;
-            }
-    
-        //if sublist already sorted got one level deeper    
-        if(left<j){
-            quickSort(unknown, left, j);
-        }
-        if(i<right){
-            quickSort(unknown,i,right);
+    for(unsigned i=presorted.size()-1; i<0; i--){
+        if (newHit.score<=presorted[i].score && newHit.score >= presorted[i-1].score){
+            presorted.insert(presorted.begin()+i, newHit);
         }
     }
 }
