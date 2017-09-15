@@ -23,7 +23,7 @@ int main()
     listoftrues.reserve(1000000);
     struct hit truepositive;
     
-    std::ifstream bedin("../GIAB_NA12878.bed");
+    std::ifstream bedin("GIAB_NA12878.bed");
     int bedchromosome;
     int bedstart, bedend;
     std::string line;
