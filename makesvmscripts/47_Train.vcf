@@ -1,0 +1,18 @@
+##fileformat=VCFv4.1
+##source=Vaquita
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Size of structural variation compared to reference">
+##INFO=<ID=TARGETPOS,Number=1,Type=Integer,Description="Position of the newly inserted sequence in duplication or translocations">
+##INFO=<ID=RT,Number=1,Type=Float,Description="Number of split-read and read-pairs supporting the structural variation">
+##INFO=<ID=SE,Number=1,Type=Integer,Description="Number of split-reads supporting the structural variation">
+##INFO=<ID=PE,Number=1,Type=Integer,Description="Number of read-pairs supporting the structural variation">
+##INFO=<ID=RE,Number=1,Type=Float,Description="Number of read-pairs supporting the structural variation">
+##INFO=<ID=RD,Number=1,Type=Float,Description="Read-depth around structural variation">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=DUP:TANDEM,Description="Tandem duplication">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=BND,Description="Breakend">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT
